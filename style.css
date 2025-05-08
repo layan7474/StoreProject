@@ -10,15 +10,54 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #e4e4e449;;
+  background-color:white;
   border-bottom: 1px solid #ddd;
 }
 
 .right-links a { 
-  margin-left: 15px;
+  margin-right: 25px;
   text-decoration: none;
-  color: #333;
-  font-size: 14px;
+  color: black;
+  font-size: 13px;
+}
+
+/*الوضع الليلي والنهاري*/
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark-mode .product-card {
+  background-color: #1e1e1e;
+  border: 1px solid #444;
+}
+
+.dark-mode .product-title,
+.dark-mode .product-price {
+  color: #f1f1f1;
+}
+
+.dark-mode .add-to-cart {
+  background-color: #333;
+  color: white;
+}
+
+.dark-mode .add-to-cart:hover {
+  background-color: #555;
+}
+
+body.dark-mode .footer {
+  background-color: #1e1e1e; /* لون داكن للفوتر */
+  color: #f0f0f0;
+}
+
+body.dark-mode .footer .footer-section {
+  background-color: #1e1e1e; /* لون داكن للفوتر */
+  color: white;
+}
+
+body.dark-mode .footer .footer-container {
+  background-color: #1e1e1e; /* لون داكن للفوتر */
 }
 
 .topbar { 
@@ -29,9 +68,10 @@ body {
 
 .language-select { 
   padding: 5px 8px;
-  font-size: 14px;
-  border: 1px solid #ccc;
+  font-size: 13px;
+  border: 1px solid #444;
   border-radius: 4px;
+  margin-left:45px;
   cursor: pointer;
 }
 
@@ -255,7 +295,7 @@ hr {
 }
 
 input {
-  width: 70%;
+  width: 60%;
   padding: 6px;/*حجم حقل الادخال الابيض*/
   margin: 5px 0;
   border: 1px solid #ccc;/*لون اطار حقل الادخال الابيض*/

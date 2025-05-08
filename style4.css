@@ -8,6 +8,15 @@ body {
 
 }
 
+#power{
+    color: rgb(0, 0, 0);
+    text-align: right;
+    margin-right: 100px;
+    position:relative;
+    margin-top: 70px;
+
+}
+
 strong {
     color: rgb(0, 0, 0);
     margin: 240px;
@@ -73,9 +82,6 @@ img{
 
 }
 
-/*اخفاء زر حذف المستخدمين وزر عرض المستخدمين*/
-/*
-#view-users, #delete-users {
-    display: none;
+#out{
+    margin-right: 70px;
 }
-*/

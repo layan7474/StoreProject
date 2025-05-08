@@ -2,44 +2,46 @@
 <html lang="ar" dir="rtl">
 
 <head>
-  <title>متجر الكتروني رقمي</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>متجر الكتروني رقمي</title>
   <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
 <!-- الشريط العلوي الي فوق-->
 <div class="navbar">
-  <input type="text" placeholder="ادخل كلمة البحث">
+  <input id="search" type="text" placeholder="ادخل كلمة البحث">
   <div class="right-links">
-       <a href="index2.html">سياسة الاستخدام والخصوصية</a>
-       <a href="index1.html">سياسة الاستبدال والاسترجاع</a>
+    <!-- زر الوضع الليلي/النهاري -->
+<button id="toggle-mode" class="btn btn-outline-secondary">🌙</button>
+       <a id="used" href="index2.html">سياسة الاستخدام والخصوصية</a>
+       <a id="return" href="index1.html">سياسة الاستبدال والاسترجاع</a>
    </div>
    <div class="topbar">
-         <!-- خيار اللغة -->
-      <select class="language-select">
-       <option value="ar">العربية</option>
-       <option value="en">English</option>
-       </select>
-   </div>
+    <!-- خيار اللغة -->
+    <select class="language-select" onchange="changeLanguage(this.value)">
+      <option value="ar">العربية</option>
+      <option value="en">English</option>
+    </select>
+  </div>
 </div>
 
 <!-- روابط الرئيسية -->
 <div class="center-links">
-  <a href="index.html">الرئيسية</a>
+  <a id="home" href="index.html">الرئيسية</a>
   <div class="dropdown">
-      <a href="#">المنتجات ▼</a>
+      <a id="Products" href="#">المنتجات ▼</a>
       <div class="dropdown-content">
-      <a href="#">باقة خلفيات جوال</a>
-      <a href="#">تصاميم كروت تهنئة</a>
-      <a href="#">ملفات تنظيم الوقت</a>
+      <a id="backgrounds" href="#">باقة خلفيات جوال</a>
+      <a id="congratulations" href="#">تصاميم كروت تهنئة</a>
+      <a id="time" href="#">ملفات تنظيم الوقت</a>
       </div>
    </div>  
-      <a href="index3.html">تواصل معنا</a>
+      <a id="connect" href="index3.html">تواصل معنا</a>
     <div class="icon">
-        <a href="index4.html">
+        <a href="index6.html">
           <img src="image/images1.png" alt="حسابي">
         </a>
     </div>
@@ -51,155 +53,155 @@
 </div>
 
 <br><br>
-<h1>متجر متكامل لكل لحظة فارقة: تهنئ أحبابك، ترتب وقتك، تجهز سيرتك، وتلون يومك بتصاميم ملهمة.</h1>
+<h1 id="store">متجر متكامل لكل لحظة فارقة: تهنئ أحبابك، ترتب وقتك، تجهز سيرتك، وتلون يومك بتصاميم ملهمة.</h1>
 <img src="image/images4.png" alt="الصورة الرئيسية">
 <br><br>
 
-  <h2>احدث المنتجات </h2>
+  <h2 id="Subtext1" >احدث المنتجات</h2>
   <div class="product-container">
     <div class="product-card">
       <img src="image/images5.png" alt="عيد الاضحى" class="product-image">
-      <p class="product-title">تهنئة العيد بتصميم خاص</p>
-      <p class="product-price">9 ﷼ </p>
-      <button class="add-to-cart">إضافة للسلة 🛒</button>
+      <p id="con1" class="product-title">تهنئة العيد بتصميم خاص</p>
+      <p id="num1" class="product-price">9 ﷼ </p>
+      <button id="add1" class="add-to-cart">إضافة للسلة 🛒</button>
     </div>
     <div class="product-card">
       <img src="image/images6.png" alt="عيد الاضحى" class="product-image">
-      <p class="product-title">تهنئة عيد الاضحى يتصميم خاص</p>
-      <p class="product-price">9 ﷼</p>
-      <button class="add-to-cart">إضافة للسلة 🛒</button>
+      <p id="con2" class="product-title">تهنئة عيد الاضحى بتصميم خاص</p>
+      <p id="num2" class="product-price">9 ﷼</p>
+      <button id="add2" class="add-to-cart">إضافة للسلة 🛒</button>
     </div>
     <div class="product-card">
       <img src="image/images7.png" alt="عيد الاضحى" class="product-image">
-      <p class="product-title">تهنئة عيد الاضحى يتصميم خاص</p>
-      <p class="product-price">9 ﷼</p>
-      <button class="add-to-cart">إضافة للسلة 🛒</button>
+      <p id="con3" class="product-title">تهنئة عيد الاضحى بتصميم خاص</p>
+      <p id="num3" class="product-price">9 ﷼</p>
+      <button id="add3" class="add-to-cart">إضافة للسلة 🛒</button>
     </div>
     <div class="product-card">
       <img src="image/images8.png" alt="عيد الاضحى" class="product-image">
-      <p class="product-title">تهنئة عيد الاضحى يتصميم خاص</p>
-      <p class="product-price">9 ﷼</p>
-      <button class="add-to-cart">إضافة للسلة 🛒</button>
+      <p id="con4" class="product-title">تهنئة عيد الاضحى بتصميم خاص</p>
+      <p id="num4" class="product-price">9 ﷼</p>
+      <button id="add4" class="add-to-cart">إضافة للسلة 🛒</button>
     </div>
   </div>
 
   <br>
 
-  <h2>تصاميم خاصة بالأعمال</h2>
+  <h2 id="Subtext2">تصاميم خاصة بالأعمال</h2>
   <div class="product-container">
     <div class="product-card">
       <img src="image/images9.png" alt="سيرة ذاتية" class="product-image">
-      <p class="product-title">سيرة ذاتية بتصميم خاص</p>
-      <p class="product-price">7 ﷼</p>
-      <button class="add-to-cart">إضافة للسلة 🛒</button>
+      <p id="cv1" class="product-title">سيرة ذاتية بتصميم خاص</p>
+      <p id="nr1" class="product-price">7 ﷼</p>
+      <button id="to1" class="add-to-cart">إضافة للسلة 🛒</button>
     </div>
     <div class="product-card">
       <img src="image/images10.png" alt="سيرة ذاتية" class="product-image">
-      <p class="product-title">سيرة ذاتية بتصميم خاص</p>
-      <p class="product-price">7 ﷼</p>
-      <button class="add-to-cart">إضافة للسلة 🛒</button>
+      <p id="cv2" class="product-title">سيرة ذاتية بتصميم خاص</p>
+      <p id="nr2" class="product-price">7 ﷼</p>
+      <button id="to2" class="add-to-cart">إضافة للسلة 🛒</button>
     </div>
     <div class="product-card">
       <img src="image/images11.png" alt="سيرة ذاتية" class="product-image">
-      <p class="product-title">سيرة ذاتية بتصميم خاص</p>
-      <p class="product-price">7 ﷼</p>
-      <button class="add-to-cart">إضافة للسلة 🛒</button>
+      <p id="cv3" class="product-title">سيرة ذاتية بتصميم خاص</p>
+      <p id="nr3" class="product-price">7 ﷼</p>
+      <button id="to3" class="add-to-cart">إضافة للسلة 🛒</button>
     </div>
     <div class="product-card">
       <img src="image/images12.png" alt="سيرة ذاتية" class="product-image">
-      <p class="product-title">سيرة ذاتية بتصميم خاص</p>
-      <p class="product-price">7 ﷼</p>
-      <button class="add-to-cart">إضافة للسلة 🛒</button>
+      <p id="cv4" class="product-title">سيرة ذاتية بتصميم خاص</p>
+      <p id="nr4" class="product-price">7 ﷼</p>
+      <button id="to4" class="add-to-cart">إضافة للسلة 🛒</button>
     </div>
   </div>
 
 <br>
 
-  <h2>بطاقات وتصاميم تهنئة ومناسبات</h2>
+  <h2 id="Subtext3">بطاقات وتصاميم تهنئة ومناسبات</h2>
   <div class="product-container">
     <div class="product-card">
       <img src="image/images13.png" alt="دعوة زواج" class="product-image">
-      <p class="product-title">دعوة زواج بتصميم خاص</p>
-      <p class="product-price">7 ﷼</p>
-      <button class="add-to-cart">إضافة للسلة 🛒</button>
+      <p id="marri1" class="product-title">دعوة زواج بتصميم خاص</p>
+      <p id="price1" class="product-price">7 ﷼</p>
+      <button id="cart1" class="add-to-cart">إضافة للسلة 🛒</button>
     </div>
     <div class="product-card">
       <img src="image/images14.png" alt="دعوة زواج" class="product-image">
-      <p class="product-title">دعوة زواج بتصميم خاص</p>
-      <p class="product-price">7 ﷼</p>
-      <button class="add-to-cart">إضافة للسلة 🛒</button>
+      <p id="marri2" class="product-title">دعوة زواج بتصميم خاص</p>
+      <p id="price2" class="product-price">7 ﷼</p>
+      <button id="cart2" class="add-to-cart">إضافة للسلة 🛒</button>
     </div>
     <div class="product-card">
       <img src="image/images15.png" alt="دعوة زواج" class="product-image">
-      <p class="product-title">دعوة زواج بتصميم خاص</p>
-      <p class="product-price">7 ﷼</p>
-      <button class="add-to-cart">إضافة للسلة 🛒</button>
+      <p id="marri3" class="product-title">دعوة زواج بتصميم خاص</p>
+      <p id="price3" class="product-price">7 ﷼</p>
+      <button id="cart3" class="add-to-cart">إضافة للسلة 🛒</button>
     </div>
     <div class="product-card">
       <img src="image/images16.png" alt="دعوة زواج" class="product-image">
-      <p class="product-title">دعوة زواج بتصميم خاص</p>
-      <p class="product-price">7 ﷼</p>
-      <button class="add-to-cart">إضافة للسلة 🛒</button>
+      <p id="marri4" class="product-title">دعوة زواج بتصميم خاص</p>
+      <p id="price4" class="product-price">7 ﷼</p>
+      <button id="cart4" class="add-to-cart">إضافة للسلة 🛒</button>
     </div>
   </div>
 
   <br>
 
-  <h2>منتجات تنظيمية</h2>
+  <h2 id="Subtext4">منتجات تنظيمية</h2>
   <div class="product-container">
     <div class="product-card">
       <img src="image/images17.png" alt="مخطط يومي" class="product-image">
-      <p class="product-title">مخطط تنظيم يومي</p>
-      <p class="product-price">مجاناً</p>
-      <button class="add-to-cart">إضافة للسلة 🛒</button>
+      <p id="plan1" class="product-title">مخطط تنظيم يومي</p>
+      <p id="free1" class="product-price">مجاناً</p>
+      <button id="atc1" class="add-to-cart">إضافة للسلة 🛒</button>
     </div>
     <div class="product-card">
       <img src="image/images18.png" alt="مخطط اسبوعي" class="product-image">
-      <p class="product-title">مخطط تنظيم اسبوعي</p>
-      <p class="product-price">مجاناً</p>
-      <button class="add-to-cart">إضافة للسلة 🛒</button>
+      <p id="plan2" class="product-title">مخطط تنظيم اسبوعي</p>
+      <p id="free2" class="product-price">مجاناً</p>
+      <button id="atc2" class="add-to-cart">إضافة للسلة 🛒</button>
     </div>
     <div class="product-card">
       <img src="image/images19.png" alt="مخطط شهري" class="product-image">
-      <p class="product-title">مخطط تنظيم شهري</p>
-      <p class="product-price">مجاناً</p>
-      <button class="add-to-cart">إضافة للسلة 🛒</button>
+      <p id="plan3" class="product-title">مخطط تنظيم شهري</p>
+      <p id="free3" class="product-price">مجاناً</p>
+      <button id="atc3" class="add-to-cart">إضافة للسلة 🛒</button>
     </div>
       <div class="product-card">
         <img src="image/images20.png" alt="خلفيات موقع اكتروني لطبيعة" class="product-image">
-        <p class="product-title">مخطط تنظيم سنوي</p>
-        <p class="product-price">مجاناً</p>
-        <button class="add-to-cart">إضافة للسلة 🛒</button>
+        <p id="plan4" class="product-title">مخطط تنظيم سنوي</p>
+        <p id="free4" class="product-price">مجاناً</p>
+        <button id="atc4" class="add-to-cart">إضافة للسلة 🛒</button>
     </div>
   </div>
 
 <br>
 
-  <h2>خلفيات رقمية عبارات</h2>
+  <h2 id="Subtext5">خلفيات رقمية عبارات</h2>
   <div class="product-container">
     <div class="product-card">
       <img src="image/images21.png" alt="خلفية قهوة" class="product-image">
-      <p class="product-title">خلفية قهوة بتصميم أنيق</p>
-      <p class="product-price">مجاناً</p>
-      <button class="add-to-cart">إضافة للسلة 🛒</button>
+      <p id="pro1" class="product-title">خلفية قهوة بتصميم أنيق</p>
+      <p id="ice1" class="product-price">مجاناً</p>
+      <button id="art1" class="add-to-cart">إضافة للسلة 🛒</button>
     </div>
     <div class="product-card">
       <img src="image/images22.png" alt="خلفية سوداء" class="product-image">
-      <p class="product-title">خلفية سوداء بتصميم أنيق</p>
-      <p class="product-price">مجاناً</p>
-      <button class="add-to-cart">إضافة للسلة 🛒</button>
+      <p id="pro2" class="product-title">خلفية سوداء بتصميم أنيق</p>
+      <p id="ice2" class="product-price">مجاناً</p>
+      <button id="art2" class="add-to-cart">إضافة للسلة 🛒</button>
     </div>
     <div class="product-card">
       <img src="image/images23.png" alt="خلفية قهوة" class="product-image">
-      <p class="product-title">خلفية قهوة بتصميم أنيق</p>
-      <p class="product-price">مجاناً</p>
-      <button class="add-to-cart">إضافة للسلة 🛒</button>
+      <p id="pro3" class="product-title">خلفية قهوة بتصميم أنيق</p>
+      <p id="ice3" class="product-price">مجاناً</p>
+      <button id="art3" class="add-to-cart">إضافة للسلة 🛒</button>
     </div>
     <div class="product-card">
       <img src="image/images24.png" alt="خلفية ذئب سوداء" class="product-image">
-      <p class="product-title">خلفية سوداء بتصميم أنيق</p>
-      <p class="product-price">مجاناً</p>
-      <button class="add-to-cart">إضافة للسلة 🛒</button>
+      <p id="pro4" class="product-title">خلفية سوداء بتصميم أنيق</p>
+      <p id="ice4" class="product-price">مجاناً</p>
+      <button id="art4" class="add-to-cart">إضافة للسلة 🛒</button>
     </div>
   </div>
   
@@ -208,8 +210,8 @@
     <div class="footer-container">
       <!-- قسم من نحن -->
       <div class="footer-section about">
-        <h3>من نحن</h3>
-        <p>
+        <h3 id="form1">من نحن</h3>
+        <p id="p1">
           متخصصون في مجال التصاميم (خلفيات)  ( سيرة ذاتية ) ( تهنئات ) ( منتجات تنظيمية) 
           لطريق للتواصل تواصل معنا عبر الواتس وارسال إيصال الدفع.
         </p>
@@ -217,15 +219,15 @@
       </div>
       <!-- روابط مهمة -->
       <div class="footer-section links">
-        <h3>روابط مهمة</h3>
+        <h3 id="form2">روابط مهمة</h3>
         <ul>
-          <li><a href="index2.html">سياسة الخصوصية</a></li>
-          <li><a href="index1.html">سياسة الاسترجاع</a></li>
+          <li><a id="p2" href="index2.html">سياسة الخصوصية</a></li>
+          <li><a id="p3" href="index1.html">سياسة الاسترجاع</a></li>
         </ul>
       </div>
       <!-- وسائل الدفع -->
       <div class="footer-section payments">
-        <h3>وسائل الدفع المتاحة</h3>
+        <h3 id="form3">وسائل الدفع المتاحة</h3>
         <div class="payment-logos">
           <img src="image/image7.png" alt="دفع 1">
         </div>

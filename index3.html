@@ -10,45 +10,48 @@
 </head>
 
 <body>
-<!-- الشريط العلوي الي فوق-->
-<div class="navbar">
-  <input type="text" placeholder="ادخل كلمة البحث">
-  <div class="right-links">
-       <a href="index2.html">سياسة الاستخدام والخصوصية</a>
-       <a href="index1.html">سياسة الاستبدال والاسترجاع</a>
-   </div>
-   <div class="topbar">
-         <!-- خيار اللغة -->
-      <select class="language-select">
-       <option value="ar">العربية</option>
-       <option value="en">English</option>
-       </select>
-   </div>
-</div>
-
-<!-- روابط الرئيسية -->
-<div class="center-links">
-  <a href="index.html">الرئيسية</a>
-  <div class="dropdown">
-      <a href="#">المنتجات ▼</a>
-      <div class="dropdown-content">
-      <a href="#">باقة خلفيات جوال</a>
-      <a href="#">تصاميم كروت تهنئة</a>
-      <a href="#">ملفات تنظيم الوقت</a>
+  <body>
+    <!-- الشريط العلوي الي فوق-->
+    <div class="navbar">
+      <input id="search" type="text" placeholder="ادخل كلمة البحث">
+      <div class="right-links">
+        <!-- زر الوضع الليلي/النهاري -->
+    <button id="toggle-mode" class="btn btn-outline-secondary">🌙</button>
+           <a id="used" href="index2.html">سياسة الاستخدام والخصوصية</a>
+           <a id="return" href="index1.html">سياسة الاستبدال والاسترجاع</a>
+       </div>
+       <div class="topbar">
+        <!-- خيار اللغة -->
+        <select class="language-select" onchange="changeLanguage(this.value)">
+          <option value="ar">العربية</option>
+          <option value="en">English</option>
+        </select>
       </div>
-   </div>  
-      <a href="index3.html">تواصل معنا</a>
-    <div class="icon">
-        <a href="index4.html">
-          <img src="image/images1.png" alt="حسابي">
-        </a>
     </div>
-    <div class="icon">
-        <a href="index5.html">
-        <img src="image/images2.png" alt="سلة متجر" >
-         </a>
+    
+    <!-- روابط الرئيسية -->
+    <div class="center-links">
+      <a id="home" href="index.html">الرئيسية</a>
+      <div class="dropdown">
+          <a id="Products" href="#">المنتجات ▼</a>
+          <div class="dropdown-content">
+          <a id="backgrounds" href="#">باقة خلفيات جوال</a>
+          <a id="congratulations" href="#">تصاميم كروت تهنئة</a>
+          <a id="time" href="#">ملفات تنظيم الوقت</a>
+          </div>
+       </div>  
+          <a id="connect" href="index3.html">تواصل معنا</a>
+        <div class="icon">
+            <a href="index6.html">
+              <img src="image/images1.png" alt="حسابي">
+            </a>
+        </div>
+        <div class="icon">
+            <a href="index5.html">
+            <img src="image/images2.png" alt="سلة متجر" >
+             </a>
+        </div>
     </div>
-</div>
 
 <body>
     <br>
@@ -60,22 +63,22 @@
             <!-- Form Section -->
             <div class="col-md-6">
                 <div class="form-container">
-                    <h2>تواصل معنا</h2>
+                    <h2 id="tit1">تواصل معنا</h2>
                     <br>
                     <form id="contactForm">
-                        <label for="name">الاسم واللقب</label>
+                        <label id="la1" for="name">الاسم واللقب</label>
                         <input type="text" id="name" name="name" class="form-control">
                         <br>
-                        <label for="email">البريد الإلكتروني</label>
+                        <label id="la2" for="email">البريد الإلكتروني</label>
                         <input type="email" id="email" name="email" class="form-control">
                         <br>
-                        <label for="phone">رقم الجوال</label>
+                        <label id="la3" for="phone">رقم الجوال</label>
                         <input type="text" id="phone" name="phone" class="form-control">
                         <br>
-                        <label for="message">اترك لنا رسالتك</label>
+                        <label id="la4" for="message">اترك لنا رسالتك</label>
                         <textarea id="message" name="message" class="form-control"></textarea>
                         <br>
-                        <button type="button" id="send" class="btn btn-primary">إرسال</button>
+                        <button id="send" type="button" class="btn btn-primary">إرسال</button>
                         <br>
                     </form>
                 </div>
@@ -84,20 +87,20 @@
             <!-- Location and Contact Section -->
             <div class="col-md-6">
                 <div class="location-container">
-                    <h2>الموقع</h2>
+                    <h2 id="tit2">الموقع</h2>
                     <div class="location">
-                        <h3>المملكة العربية السعودية الرياض</h3>
+                        <h3 id="tit3">المملكة العربية السعودية الرياض</h3>
                     </div>
 
                     <div class="content">
                         <br>
-                        <h2>بيانات التواصل</h2>
-                        <p><b>رضاؤكم هدفنا..</b> لذا نسعى للوصول إليكم في أي وقت وفي كل مكان</p>
+                        <h2 id="tit4">بيانات التواصل</h2>
+                        <p id="tit5"><b>رضاؤكم هدفنا..</b> لذا نسعى للوصول إليكم في أي وقت وفي كل مكان</p>
 
                         <div class="social-icons">
-                            <p><b>يرجى التواصل على الواتس وإرسال ايصال الدفع :</b></p>
+                            <p id="tit6"><b>يرجى التواصل على الواتس وإرسال ايصال الدفع :</b></p>
                             <a href="https://web.whatsapp.com/"><img id="sweet" src="image/images25.png" alt="واتس"></a>
-                            <p><b>   الهاتف: 0509203574</b></p>
+                            <p id="tit7"><b> الهاتف: 0509203574</b></p>
                             <img id="nice" src="image/images26.png" alt="الهاتف">
 
                         </div>
@@ -109,47 +112,38 @@
         <!-- Output Section -->
         <div id="output" class="mt-5"></div>
     </div>
-
     <br> <br> <br>
-<footer class="footer">
-      <div class="footer-container">
-        <!-- قسم من نحن -->
-        <div class="footer-section about">
-          <h3>من نحن</h3>
-          <p>
-            متخصصون في مجال التصاميم (خلفيات)  ( سيرة ذاتية ) ( تهنئات ) ( منتجات تنظيمية) 
-            لطريق للتواصل تواصل معنا عبر الواتس وارسال إيصال الدفع.
-          </p>
-          <a href="https://wa.me/your-number" target="_blank"></a>
-        </div>
-        <!-- روابط مهمة -->
-        <div class="footer-section links">
-          <h3>روابط مهمة</h3>
-          <ul>
-            <li><a href="index2.html">سياسة الخصوصية</a></li>
-            <li><a href="index1.html">سياسة الاسترجاع</a></li>
-          </ul>
-        </div>
-        <!-- وسائل الدفع -->
-        <div class="footer-section payments">
-          <h3>وسائل الدفع المتاحة</h3>
-          <div class="payment-logos">
-            <img src="image/image7.png" alt="دفع 1">
+    <footer class="footer">
+        <div class="footer-container">
+          <!-- قسم من نحن -->
+          <div class="footer-section about">
+            <h3 id="form1">من نحن</h3>
+            <p id="p1">
+              متخصصون في مجال التصاميم (خلفيات)  ( سيرة ذاتية ) ( تهنئات ) ( منتجات تنظيمية) 
+              لطريق للتواصل تواصل معنا عبر الواتس وارسال إيصال الدفع.
+            </p>
+            <a href="https://wa.me/your-number" target="_blank"></a>
+          </div>
+          <!-- روابط مهمة -->
+          <div class="footer-section links">
+            <h3 id="form2">روابط مهمة</h3>
+            <ul>
+              <li><a id="p2" href="index2.html">سياسة الخصوصية</a></li>
+              <li><a id="p3" href="index1.html">سياسة الاسترجاع</a></li>
+            </ul>
+          </div>
+          <!-- وسائل الدفع -->
+          <div class="footer-section payments">
+            <h3 id="form3">وسائل الدفع المتاحة</h3>
+            <div class="payment-logos">
+              <img src="image/image7.png" alt="دفع 1">
+            </div>
           </div>
         </div>
-      </div>
-</footer>
+      </footer>
   
     <script src="java.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   
   </body>
-</html>
-  
-
-
-
-
-
-
-   
+</html> 
